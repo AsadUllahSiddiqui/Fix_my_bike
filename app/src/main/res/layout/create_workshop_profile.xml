@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_workshop_profile">
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/workshop_profile_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/profile_pic"
+            app:civ_circle_background_color="#d4d4d4" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:maxWidth="30dp"
+            android:maxHeight="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camra_button"
+            android:layout_marginLeft="3dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/workshop_name"
+                android:padding="7dp"
+                android:background="@drawable/text_background"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Workshop Name"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <EditText
+                android:id="@+id/owner_name"
+                android:padding="7dp"
+                android:background="@drawable/text_background"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Owner's name"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/workshop_Address"
+            android:padding="7dp"
+            android:background="@drawable/text_background"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Address"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/workshop_phone_number"
+            android:paddingHorizontal="7dp"
+            android:background="@drawable/text_background"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="03001231231"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Workshop"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/workshop_bio"
+            android:gravity="top"
+            android:padding="7dp"
+            android:background="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="Tell more about yourself"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+        <Button
+            android:id="@+id/save_workshop_profile_button"
+            android:background="@drawable/button_green"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="Save"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:src="@drawable/button_green"
+            ></Button>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/get_current_location"
+            android:background="@drawable/button_green"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="Set location"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/button_green"
+            ></Button>
+    </RelativeLayout>
+
+</LinearLayout>

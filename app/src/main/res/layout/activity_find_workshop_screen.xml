@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#585858"
+    android:weightSum="10"
+    tools:context=".findWorkshopScreen">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <ImageButton android:id="@+id/Find_workshop_back_button"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="7dp"
+            android:background="@null"
+            android:src="@drawable/back_yellow"
+            />
+        <EditText
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/search_bar"
+            android:padding="3dp"
+            android:background="@drawable/button"
+            android:autofillHints="Search" />
+    </RelativeLayout>
+    <LinearLayout
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="20dp"
+        >
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5">
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/workshops_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="9dp"
+            android:background="@drawable/abb"
+
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

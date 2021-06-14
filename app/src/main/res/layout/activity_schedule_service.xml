@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#585858"
+    tools:context=".ScheduleService">
+
+    <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangular_bg_yellow"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:text="Schedule a Service"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/schedule_service_back_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/titleBar"
+        android:layout_marginVertical="30dp"
+        android:background="@null"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <RelativeLayout
+        android:id="@+id/bikeSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangular_bg_grey"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bikeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="10dp"
+            android:text="Select Bike"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bikeText"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp"
+            tools:itemCount="2" />
+    </RelativeLayout>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bikeSelect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/rectangular_bg_grey" />
+
+    <Button
+        android:id="@+id/schedule_service_save_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        android:background="#FECE2F"
+        android:text="Schedule" />
+
+
+</RelativeLayout>

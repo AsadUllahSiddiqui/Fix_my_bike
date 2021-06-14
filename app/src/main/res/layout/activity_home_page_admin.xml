@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout_Admin_home"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_page_admin"
+    >
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#585858"
+        android:fitsSystemWindows="true"
+        android:weightSum="10"
+        >
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo">
+            </ImageView>
+            <ImageButton android:id="@+id/Navigation_Icon_button_admin_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="10dp"
+                android:maxWidth="40dp"
+                android:maxHeight="58dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="7dp"
+                android:background="#585858"
+                android:src="@drawable/nevigation_icon"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+                <ImageButton android:id="@+id/About_Today_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_centerInParent="true"
+                    android:maxWidth="90dp"
+                    android:maxHeight="58dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="3dp"
+                    android:background="#585858"
+                    android:src="@drawable/about_today"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Today"
+                    android:textColor="#FECE2F"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/About_Today_button"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                >
+                <ImageButton android:id="@+id/History_admin_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_centerInParent="true"
+                    android:maxWidth="70dp"
+                    android:maxHeight="58dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="3dp"
+                    android:background="#585858"
+                    android:src="@drawable/calender"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:textColor="#FECE2F"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/History_admin_button"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Customer_queue_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="9dp"
+                android:background="@drawable/service_station"
+                android:alpha=".6 "
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+            <ImageButton android:id="@+id/Manage_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:maxWidth="80dp"
+                android:maxHeight="58dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="3dp"
+                android:background="#585858"
+                android:src="@drawable/manage_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Bookings"
+                android:textColor="#FECE2F"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Manage_button"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view_admin_home"
+        app:headerLayout="@layout/header_admin_home"
+        app:menu="@menu/menu_admin_home"
+        android:layout_gravity="start">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

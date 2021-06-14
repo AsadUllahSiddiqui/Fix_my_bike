@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="6dp"
+    android:id="@+id/Find_Workshop_layout"
+    >
+    <RelativeLayout
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_grey"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/workshop_name_id"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginLeft="125dp"
+            android:textSize="14dp" />
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/workshop_name_id"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginLeft="125dp"
+                android:id="@+id/workshop_address_id"/>
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="125dp"
+                android:layout_marginLeft="125dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/workshop_address_id"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:id="@+id/workshop_number_id"/>
+
+        <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+
+        android:text="Workshop Name"
+        android:textColor="#FECE2F" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+
+            android:text="Address"
+            android:textColor="#FECE2F" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+
+            android:text="Phone No"
+            android:textColor="#FECE2F" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

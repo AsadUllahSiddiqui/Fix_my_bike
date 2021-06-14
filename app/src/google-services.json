@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "564146425732",
+    "firebase_url": "https://semecterproject-default-rtdb.firebaseio.com",
+    "project_id": "semecterproject",
+    "storage_bucket": "semecterproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564146425732:android:0f3798d357326e529fd7d1",
+        "android_client_info": {
+          "package_name": "com.example.semester_project_lvl_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564146425732-d536e98ng6sqoe0jlv9ni2ch571rtlm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.semester_project_lvl_1",
+            "certificate_hash": "c6123d6a0f8cd2ffc23374dc4f3b3e6f2b98b84d"
+          }
+        },
+        {
+          "client_id": "564146425732-tal6fdsgvq0o4rt2pogps346dr72mpdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6U0cYbNfVk9e3f6Nqh44LKsXLVHtWfac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564146425732-tal6fdsgvq0o4rt2pogps346dr72mpdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

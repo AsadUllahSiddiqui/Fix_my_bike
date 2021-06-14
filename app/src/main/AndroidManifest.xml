@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.semester_project_lvl_1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".show_accepted_orders"></activity>
+        <activity android:name=".select_bike"></activity>
+        <activity android:name=".header_admin_home" />
+        <activity android:name=".login_admin" />
+        <activity android:name=".create_workshop_profile" />
+        <activity android:name=".create_profile" />
+        <activity android:name=".Select_Services"></activity>
+        <activity android:name=".signup_options" />
+        <activity android:name=".login" />
+        <activity android:name=".home_page_admin" />
+        <activity android:name=".Add_Bike_Row" />
+        <activity android:name=".Home_Page_User" />
+        <activity android:name=".ManageBooking" />
+        <activity android:name=".SignUp_Admin" />
+        <activity android:name=".SignUp_user" />
+        <activity android:name=".first_login_signup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".add_new_bike" />
+        <activity android:name=".findWorkshopScreen" />
+        <activity android:name=".User_History" />
+        <activity android:name=".Admin_History" />
+        <activity android:name=".AdminProfile" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".AboutToday" />
+        <activity android:name=".ScheduleService" />
+    </application>
+
+</manifest>

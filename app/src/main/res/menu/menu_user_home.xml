@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/user_Profile_id"
+            android:icon="@drawable/person_icon"
+            android:title="Profile"></item>
+        <item
+            android:id="@+id/user_History_id"
+            android:icon="@drawable/history_icon"
+            android:title="History"></item>
+        <item
+            android:id="@+id/user_Reminder_id"
+            android:icon="@drawable/reminder_icon"
+            android:title="Reminder"></item>
+        <item
+            android:id="@+id/user_Logout_id"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"></item>
+
+    </group>
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/user_Share_id"
+                android:icon="@drawable/share_icon"
+                android:title="Share"></item>
+            <item
+                android:id="@+id/user_Rate_id"
+                android:icon="@drawable/rate_icon"
+                android:title="Rate Us"></item>
+        </menu>
+
+    </item>
+</menu>

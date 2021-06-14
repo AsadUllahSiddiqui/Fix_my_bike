@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#585858"
+    android:weightSum="10"
+    tools:context=".Admin_History">
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button"
+        android:layout_marginVertical="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_grey"
+                android:layout_centerInParent="true"
+
+                >
+            </ImageView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="Date DD/MM/YY"
+
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <ImageButton
+                android:id="@+id/admin_history_back_button"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_grey"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                >
+            </ImageButton>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="20dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5">
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/adminHistory_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="9dp"
+            android:background="@drawable/abb"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
